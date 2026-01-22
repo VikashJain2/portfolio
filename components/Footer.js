@@ -15,8 +15,7 @@ export default function Footer() {
               <span className="text-2xl font-bold text-gray-300 font-space">Jain</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Full Stack Developer specializing in MERN stack and microservices architecture. 
-              Passionate about building scalable, high-performance applications.
+              Full Stack Developer skilled in MERN stack, Spring Boot, and microservices, with proven experience building scalable, real-time, and AI-powered applications. Strong in REST APIs, WebSockets, performance optimization, and cloud deployment, with a passion for clean architecture and impactful products.
             </p>
             <div className="flex gap-4">
               <a href="https://linkedin.com/in/vikash-jain-" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-[#FF6B35] transition-colors">

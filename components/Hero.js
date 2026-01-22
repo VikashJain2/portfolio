@@ -77,8 +77,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-8 max-w-2xl">
-              Skilled in MERN stack and microservices architecture, with experience building scalable multi-tenant applications. 
-              Proven ability to optimize API performance by 40% and reduce real-time latency by 35%.
+            Full Stack Developer skilled in MERN stack, Spring Boot, and microservices, with proven experience building scalable, real-time, and AI-powered applications. Strong in REST APIs, WebSockets, performance optimization, and cloud deployment, with a passion for clean architecture and impactful products.
             </p>
             
             {/* CTA Buttons */}
@@ -98,15 +97,15 @@ export default function Hero() {
             {/* Stats */}
             <div className="flex flex-wrap gap-8 mb-10">
               <div>
-                <div className="text-3xl font-bold text-[#FF6B35]">40%</div>
+                <div className="text-3xl font-bold text-[#FF6B35]">~40%</div>
                 <div className="text-gray-600 dark:text-gray-400 text-sm">API Optimization</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#FF6B35]">35%</div>
+                <div className="text-3xl font-bold text-[#FF6B35]">~35%</div>
                 <div className="text-gray-600 dark:text-gray-400 text-sm">Latency Reduction</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#FF6B35]">30%</div>
+                <div className="text-3xl font-bold text-[#FF6B35]">~30%</div>
                 <div className="text-gray-600 dark:text-gray-400 text-sm">Report Speed Increase</div>
               </div>
             </div>
