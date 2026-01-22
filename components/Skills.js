@@ -28,7 +28,9 @@ const skillsData = [
       { name: 'Spring JPA', type: 'backend' },
       { name: 'Node.js', type: 'backend' },
       { name: 'Express.js', type: 'backend' },
-      { name: 'WebSocket APIs', type: 'backend' }
+      { name: 'WebSocket APIs', type: 'backend' },
+      { name: 'Bull MQ', type: 'backend' },
+      { name: 'Redis', type: 'backend' },
     ]
   },
   {
@@ -39,9 +41,10 @@ const skillsData = [
       { name: 'ReactJS', type: 'frontend' },
       { name: 'Vue.js', type: 'frontend' },
       { name: 'Next.js', type: 'frontend' },
-      { name: 'Redis', type: 'frontend' },
+      {name: "Shadcn", type: 'frontend'},
+      {name: "Redux", type: "frontend"},
       { name: 'Tailwind CSS', type: 'frontend' },
-      { name: 'Bull MQ', type: 'frontend' }
+      
     ]
   },
   {
