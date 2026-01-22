@@ -1,26 +1,55 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 45, 52, 54;
+  --background-rgb: 249, 249, 249;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --foreground-rgb: 249, 249, 249;
+  --background-rgb: 15, 23, 42;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#FF6B35] hover:bg-[#e55a2a] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex items-center gap-2;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35] hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex items-center gap-2;
+  }
+  
+  .skill-tag {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md;
+  }
+  
+  .tech-tag {
+    @apply px-3 py-1.5 rounded-md text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-md;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-4 relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-[-12px] left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-[#FF6B35] to-[#00B894] rounded;
+  }
 }
